@@ -13,7 +13,6 @@ function Calculator() {
 
 return(
     <section className="container mt-4">
-        <h2>Számológép</h2>
         <div>
             <label>Első szám</label>
             <input
@@ -32,6 +31,17 @@ return(
             onChange={(e) => setMasodik(e.target.value)}
             />            
         </div>
+        <div>
+            <label>Művelet</label>
+            <select value={muvelet} onChange={(e) => setElso(e.target.value)}>
+                <option value="+">Összeadás (+)</option>
+                <option value="-">Kivonás (-)</option>
+                <option value="*">Szorzás (*)</option>
+                <option value="/">Osztás (/)</option>
+            </select>
+        </div>
+
+        <button></button>
         
     </section>
 )
